@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Human Health Balance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Human Health Balance System</h1>
+  <p>Understand your body. Avoid mistakes. Follow proven systems.</p>
+</header>
+
+<div class="container">
+
+  <div class="sidebar">
+
+    <div class="menu-section">
+      <h3 class="menu-title" onclick="toggleMenu(this)">🍎 Nutrition</h3>
+      <div class="submenu">
+        <div class="item"><button onclick="showContent('nutrition-basics',this)">Basics</button></div>
+        <div class="item"><button onclick="showContent('nutrition-mistakes',this)">Common Mistakes</button></div>
+        <div class="item"><button onclick="showContent('nutrition-facts',this)">Scientific Facts</button></div>
+        <div class="item"><button onclick="showContent('nutrition-research',this)">Research</button></div>
+        <div class="item"><button onclick="showContent('nutrition-guide',this)">Practical Guide</button></div>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h3 class="menu-title" onclick="toggleMenu(this)">🏃 Exercise</h3>
+      <div class="submenu">
+        <div class="item"><button onclick="showContent('exercise-types',this)">Types</button></div>
+        <div class="item"><button onclick="showContent('exercise-mistakes',this)">Mistakes</button></div>
+        <div class="item"><button onclick="showContent('exercise-facts',this)">Facts</button></div>
+        <div class="item"><button onclick="showContent('exercise-routines',this)">Routines</button></div>
+      </div>
+    </div>
+    <div class="menu-section">
+      <h3 class="menu-title" onclick="toggleMenu(this)">💧 Hydration</h3>
+      <div class="submenu">
+        <div class="item"><button onclick="showContent('hydration-basics',this)">Basics</button></div>
+        <div class="item"><button onclick="showContent('hydration-tips',this)">Tips</button></div>
+      </div>
+    </div>
+    <div class="menu-section">
+      <h3 class="menu-title" onclick="toggleMenu(this)">🔄 Daily Routine</h3>
+      <div class="submenu">
+        <div class="item"><button onclick="showContent('daily_routine-habits',this)">Habits</button></div>
+        <div class="item"><button onclick="showContent('daily_routine-balance',this)">Balance</button></div>
+      </div>
+    </div>                     
+  
+  </div>
+
+
+  <div class="content" id="content">
+    <u><h2>Welcome</h2></u>
+    <p>Select a topic from the left to explore.</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

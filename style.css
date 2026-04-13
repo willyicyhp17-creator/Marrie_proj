@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 1px;
+  margin: 0;
+  text-align: center;
+  height: 16vh;
+}
+
+.container {
+  display: flex;
+  background-color: #13ce16;
+  margin: 0;
+  
+}
+
+
+.sidebar {
+  width: 30%;
+  background: #f0f0f0;
+  height: 84vh;
+  display: flex;              
+  flex-direction: column;   
+  justify-content: space-evenly;
+ 
+}
+
+.menu-section {
+  margin: 2px 0;
+ 
+}
+.submenu {
+  display: none;   
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.submenu.open {
+  display: block;
+}
+.menu-title:hover{
+  color: #0077cc;
+  transition: 1s;
+ font-size: larger;
+}
+
+.sidebar h3 {
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 10px 12px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.item button{
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  padding:4px ;
+  cursor: pointer;
+  outline: inherit;
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #0077cc;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item button:hover {
+  background: #d6eaff;
+  color: #005599;
+  padding-left: 15px;
+}
+.item button.active {
+  background: #0077cc;
+  color: white;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.content {
+  width: 70%;
+  padding: 20px;
+  background: white;
+  overflow-y: auto;
+  animation: fadeIn 0.4s ease;
+}
+.content-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 10px 0;
+}
+#run{
+  height: 150px;
+  object-fit: cover;
+
+}
+#Nfact{
+  height: 150px;
+  object-fit: cover;
+}
+#TRoutine{
+  height: 300px;
+  width: 200px;
+  object-fit: contain;
+}
+#Hbasic{
+  height: 200px;
+  object-fit: fill;
+}
+#Htips{
+  height: 200px;
+  object-fit: fill;
+}
