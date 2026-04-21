@@ -15,6 +15,12 @@ header {
   text-size:20px;
   height:20%;
 }
+header h1{
+  size:40px;
+}
+header p{
+  size:20px;
+}
 
 .container {
   display: flex;
